@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1067/1067809.png" type="image/png">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>  
+    <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxvyXxFl2Pi6ptq39cwzSA__fVdgS6hGm-g&usqp=CAU">
+    <h1>Приветствую вас, любители котиков!</h1>
+<p>Чтобы попасть в наш клуб <b>"Ученые коты"</b>, вам надо заполнить анкету.</p>   
+<br>
+<form>
+    <label for="nickname">Кличка питомца* </label>
+    <input type="text" name="nickname" id="nickname" maxlength=12 required/> <hr>
+    <p>Порода питомца <select id="catType">
+        <option value="main coon">Мейн кун</option>
+        <option value="siam">Сиамская кошка</option>
+        <option value="main coon">Бенгальская кошка</option>
+        <option value="scotland">Шотландская вислоухая</option>
+        <option value="abissin">Абиссинская кошка</option>
+        <option value="russian">Русская голубая</option>
+        <option value="sibir">Сибирская кошка</option>
+        <option value="kornish-rex">Корниш-рекс</option>
+        <option value="Different">Другая</option>
+    </select></p> <hr>
+    <p>Рацион питомца:</p>
+    <label>Сухой корм <input class="checkbox" type="checkbox" value="сухой"/></label><br>
+    <label>Влажный корм <input class="checkbox" type="checkbox" value="влажный"/></label><br>
+    <label>Натуральный корм <input class="checkbox" type="checkbox" value="натуральный"/></label><br><hr>
+    <p>Пол питомца:</p>
+    <label>Самец<input class="radio" type="radio" name="sex" value="самец"/></label><br>
+    <label>Самка <input class="radio" type="radio" name="sex" value="самка"/></label><br><hr>
+    <p>Фото питомца</p>
+    <input type="file"/><br><hr>
+    <p>Оставь свой комментарий</p>
+    <textarea rows="5" cols="25"></textarea><br>
+    <fieldset>
+        <legend>Контактные данные владельца</legend>
+        <p>Имя владельца* <input type="text" name="firstname" required/></p>
+        <p>Номер телефона* <input type="tel" name="telephone" /></p>
+        <p>Электронный адрес* <input type="email" name="email" required/></p>
+    </fieldset><br><br>
+    <input type="button" id="saveButton" value="Сохранить"/>
+</form>
+</div> 
+<script src="assets/script.js"></script>
+</body>
+</html>
