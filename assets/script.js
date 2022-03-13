@@ -29,4 +29,20 @@ saveButton.onclick= () => {
 
     let MyCat = new Cat(name, type, food, gender);
     console.log(`Кличка ${MyCat.name}, порода ${MyCat.type}, предпочетает ${MyCat.food} корм, ${MyCat.gender}`);
+
+    //let form = document.querySelector('form');
+    fetch('https://httpbin.org/post', {
+		method: 'POST',
+		body: new FormData(form),
+  		headers: {
+     		'Content-Type':'form/multipart'
+   		},
+})
+  .then(response => response.json())
+  .then(user => {
+    console.log(user);
+  })
+  .catch(error => console.log(error));
 }
+
+
